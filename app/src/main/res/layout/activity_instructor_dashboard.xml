@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Instructor_DashboardActivity"
+    android:background="@drawable/background_back12">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvBienvenida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bienvenido, Instructor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#14287D"/>
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- Resumen de Préstamos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_item_dashboard"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvPrestamosActivos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Activos: 0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#4CAF50"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tvPrestamosPendientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pendientes: 0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FF9800"/>
+    </LinearLayout>
+
+    <!-- Botones Principales -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnSolicitarPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Solicitar Préstamo"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/button_primary"/>
+
+        <Button
+            android:id="@+id/btnMisPrestamos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Mis Préstamos"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/button_secundary"/>
+
+        <Button
+            android:id="@+id/btnInventario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💻 Ver Inventario"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/button_secundary"/>
+
+        <Button
+            android:id="@+id/btnDevoluciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔄 Registrar Devolución"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/button_secundary"/>
+    </LinearLayout>
+
+    <!-- Préstamos Recientes -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Préstamos Recientes"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPrestamos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

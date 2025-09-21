@@ -1,0 +1,162 @@
+<resources>
+    <!--CREDENCIALES APLICATIVO-->
+    <string name="app_name">INVENTARIO</string>
+    <string name="developer">Carlos Sullca</string>
+    <string name="desarrollo">Desarrollado por:</string>
+    <string name="version">Version 1.0.9</string>
+    <string name="telefono_dev">Telefono: 956352201</string>
+
+    <!--BOTNES GLOBALES-->
+    <string name="listar">Lista</string>
+    <string name="guardar">Guardar</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="buscar">Buscar</string>
+    <string name="volver">Volver</string>
+
+    <!--LOGIN-->
+    <string name="Titulo_login">Ingrese Session</string>
+    <string name="lblusuario">Usuario</string>
+    <string name="txtusuario">Ingrese Usuario</string>
+    <string name="lblcontraseña">Contraseña</string>
+    <string name="txtpassword">Ingrese Contraseña</string>
+    <string name="btningresar">Ingresar</string>
+    <string name="lbl_crear_cuenta">No tiene cuenta?, Registrate</string>
+
+
+    <string-array name="cargos_array">
+        <item>Instructor</item>
+        <item>Supervisor</item>
+        <item>Administrador</item>
+    </string-array>
+
+    <!--Registro-->
+    <string name="titulo_registro">Registrar Usuario</string>
+    <string name="lbl_nombres">Nombres</string>
+    <string name="txt_nombres">Ingrese Nombres</string>
+    <string name="lbl_apellidos">Apellidos</string>
+    <string name="txt_apellidos">Ingrese Apellidos</string>
+    <string name="lbl_correo">Correo</string>
+    <string name="txt_correo">Ingrese Correo</string>
+    <string name="lbl_password">Contraseña</string>
+    <string name="text_password">Ingrese su Password</string>
+    <string name="lbl_confirmar_pasword">Confirmar Password</string>
+    <string name="txt_confirmar">Ingrese la confirmación de Password</string>
+    <string name="btn_ingresar">Registrar Usuario</string>
+    <string name="lbl_ir_login">Volver al Ingreso</string>
+
+    <!--Dashboard-->
+    <string name="bienvenido">Bienvenido</string>
+    <string name="empresa">Clientes</string>
+    <string name="gastos">Gastos</string>
+    <string name="lista_tareas">Lista de tareas</string>
+    <string name="tareas">Tareas</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="mis_datos">Mis Datos</string>
+    <string name="cerrar_sesion">Cerrar Sessiòn</string>
+
+    <!--mis datos-->
+    <string name="correo_md">Correo_usuario</string>
+    <string name="codigo_md">Codigo Usuario</string>
+    <string name="titulo_md">Mis Datos</string>
+    <string name="datos_md">Datos:</string>
+    <string name="leyenda_md">Todos los campos son requeridos: Nombre, Apellidos, Teléfono</string>
+    <string name="nombre_md">Nombres</string>
+    <string name="apellido_md">Apellidos</string>
+    <string name="fecha_nacimiento">Fecha Nacimiento</string>
+    <string name="edad_md">Edad</string>
+    <string name="telefono_md">Telefono</string>
+    <string name="domicilio_md">Domicilio</string>
+    <string name="tiktok_md">Tiktok</string>
+    <string name="profesion_md">Profesión</string>
+
+    <!--ITEM CLIENTE-->
+    <string name="id_cliente_item">Id Cliente</string>
+    <string name="uid_cliente">Uid Cliente</string>
+    <string name="nombre_cliente_item">Nombre</string>
+    <string name="apellido_cliente_item">Apellidos</string>
+    <string name="correo_cliente_item">Correo</string>
+    <string name="dni_cliente_item">Dni</string>
+    <string name="telefono_cliente_item">Telefono</string>
+    <string name="direccion_cliente_Item">Direccion</string>
+
+
+    <string-array name="roles_array">
+        <item>Instructor</item>
+        <item>Supervisor</item>
+        <item>Administrador</item>
+    </string-array>
+
+    <string-array name="categorias_array">
+        <item>Computación</item>
+        <item>Electrónica</item>
+        <item>Redes</item>
+        <item>Telecomunicaciones</item>
+        <item>Herramientas</item>
+    </string-array>
+
+    <string-array name="estados_array">
+        <item>Disponible</item>
+        <item>En Mantenimiento</item>
+        <item>Dañado</item>
+        <item>Obsoleto</item>
+    </string-array>
+
+    <string-array name="tipos_movimiento_array">
+        <item>Entrada</item>
+        <item>Salida</item>
+    </string-array>
+
+    <string-array name="tipos_reporte_array">
+        <item>Inventario</item>
+        <item>Préstamos</item>
+        <item>Usuarios</item>
+        <item>Auditoría Completa</item>
+    </string-array>
+
+    <string-array name="rango_fecha_array">
+        <item>Hoy</item>
+        <item>Última semana</item>
+        <item>Último mes</item>
+        <item>Últimos 3 meses</item>
+        <item>Todo el historial</item>
+    </string-array>
+
+    <string-array name="formatos_exportacion_array">
+        <item>PDF</item>
+        <item>Excel</item>
+        <item>CSV</item>
+    </string-array>
+
+    <string-array name="estados_prestamo_array">
+        <item>Todos</item>
+        <item>Pendientes</item>
+        <item>Aprobados</item>
+        <item>Rechazados</item>
+        <item>Devueltos</item>
+    </string-array>
+
+    <string-array name="estados_devolucion_array">
+        <item>Excelente</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Dañado</item>
+        <item>Requiere Mantenimiento</item>
+    </string-array>
+
+    <string-array name="filtro_estado_array">
+        <item>Todos</item>
+        <item>Aprobados</item>
+        <item>Rechazados</item>
+        <item>Devueltos</item>
+    </string-array>
+
+    <string-array name="filtro_estados">
+        <item>Todos</item>
+        <item>pendiente</item>
+        <item>aprobado</item>
+        <item>rechazado</item>
+        <item>devuelto</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,64 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id("com.google.gms.google-services")
+}
+
+android {
+    namespace 'com.cms.inventariostareas'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.cms.inventariostareas"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    //sirve para los formatos json
+    implementation 'com.airbnb.android:lottie:3.0.1'
+    //sireve para el analisis de la base de datos
+    implementation'com.google.firebase:firebase-analytics:21.3.0'
+    //libreria que sirve para autentificar la base de datos
+    implementation'com.google.firebase:firebase-auth:22.1.2'
+    //libreria que administra la base de datos
+    implementation'com.google.firebase:firebase-database:20.2.2'
+
+    implementation 'com.itextpdf:itext7-core:7.2.5'
+    // o si prefieres la versión más ligera:
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0' // Para generar QR
+    implementation 'com.google.zxing:core:3.4.1' // Core de ZXing para QR
+
+    // Dependencias de AndroidX
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+
+    implementation'com.firebaseui:firebase-ui-database:8.0.0'
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
